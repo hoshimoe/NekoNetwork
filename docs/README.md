@@ -162,11 +162,11 @@ The complete API reference is available directly in the header files:
 - [OpenSSL Documentation](https://www.openssl.org/docs/)
 
 ### Related Projects
-- [NekoLog](https://github.com/moehoshio/NekoLog) - Logging library
-- [NekoThreadPool](https://github.com/moehoshio/NekoThreadPool) - Thread pool library
-- [NekoSchema](https://github.com/moehoshio/NekoSchema) - Type definitions
-- [NekoFunction](https://github.com/moehoshio/NekoFunction) - Utility functions
-- [NekoSystem](https://github.com/moehoshio/NekoSystem) - System utilities
+- [NekoLog](https://github.com/hoshimoe/NekoLog) - Logging library
+- [NekoThreadPool](https://github.com/hoshimoe/NekoThreadPool) - Thread pool library
+- [NekoSchema](https://github.com/hoshimoe/NekoSchema) - Type definitions
+- [NekoFunction](https://github.com/hoshimoe/NekoFunction) - Utility functions
+- [NekoSystem](https://github.com/hoshimoe/NekoSystem) - System utilities
 
 ## 💡 Tips
 
@@ -186,12 +186,12 @@ If you find errors in the documentation or want to add examples:
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/moehoshio/NekoNet/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/moehoshio/NekoNet/discussions)
+- **Issues**: [GitHub Issues](https://github.com/hoshimoe/NekoNetwork/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/hoshimoe/NekoNetwork/discussions)
 - **Main README**: [../README.md](../README.md)
 
 ---
 
 **Last Updated**: 2025-10-11  
 **Version**: 1.0  
-**Maintained by**: [moehoshio](https://github.com/moehoshio)
+**Maintained by**: [hoshimoe](https://github.com/hoshimoe)

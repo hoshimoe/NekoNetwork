@@ -8,8 +8,8 @@ class NekoNetworkConan(ConanFile):
     name = "neko-network"
     version = "1.0.3"
     license = "MIT OR Apache-2.0"
-    author = "moehoshio"
-    url = "https://github.com/moehoshio/NekoNetwork"
+    author = "hoshimoe"
+    url = "https://github.com/hoshimoe/NekoNetwork"
     description = "Neko Network is a modern, easy-to-use, and efficient C++20 network library built on top of libcurl."
     topics = ("cpp", "network", "library", "cross-platform", "neko", "http", "websocket", "curl")
     

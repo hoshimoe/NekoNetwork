@@ -1,7 +1,7 @@
 /**
  * @file network_test.cpp
  * @brief Unit tests for the NekoNet network module
- * @author moehoshio
+ * @author hoshimoe
  * @copyright Copyright (c) 2025 Hoshi
  * @license MIT OR Apache-2.0
  */
@@ -766,7 +766,7 @@ TEST(GlobalConfigTest, InitializeSetsDefaultConfiguration) {
     
     // Verify default values are set
     EXPECT_FALSE(cfg.getUserAgent().empty());
-    EXPECT_EQ(cfg.getUserAgent(), "NekoNetwork/v1.0.3 +https://github.com/moehoshio/NekoNetwork");
+    EXPECT_EQ(cfg.getUserAgent(), "NekoNetwork/v1.0.4 +https://github.com/hoshimoe/NekoNetwork");
     EXPECT_EQ(cfg.getProtocol(), "https://");
     EXPECT_EQ(cfg.getProxy(), "true");
 }
