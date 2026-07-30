@@ -505,7 +505,7 @@ If you don't need custom settings, use the default configuration:
 neko::network::initialize(nullptr);
 
 // Defaults:
-// - User-Agent: "NekoNet/v1.0 +https://github.com/moehoshio/NekoNet"
+// - User-Agent: "NekoNetwork/v1.0.4 +https://github.com/hoshimoe/NekoNetwork"
 // - Protocol: "https://"
 // - Proxy: "true" (use system proxy)
 ```
@@ -852,5 +852,5 @@ neko::network::RequestConfig config;  // Will have userAgent = "MyApp"
 ## See Also
 
 - [Main README](../README.md)
-- [NekoLog Documentation](https://github.com/moehoshio/NekoLog)
-- [NekoThreadPool Documentation](https://github.com/moehoshio/NekoThreadPool)
+- [NekoLog Documentation](https://github.com/hoshimoe/NekoLog)
+- [NekoThreadPool Documentation](https://github.com/hoshimoe/NekoThreadPool)

@@ -5,7 +5,7 @@ Neko Network is a modern, easy-to-use, and efficient C++20 network library built
 [![License](https://img.shields.io/badge/License-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE)
 ![Require](https://img.shields.io/badge/%20Require%20-%3E=%20C++%2020-orange.svg)
 [![CMake](https://img.shields.io/badge/CMake-3.16+-green.svg)](https://cmake.org/)
-[![CI Status](https://github.com/moehoshio/NekoNetwork/actions/workflows/ci.yml/badge.svg)](https://github.com/moehoshio/NekoNetwork/actions/workflows/ci.yml)
+[![CI Status](https://github.com/hoshimoe/NekoNetwork/actions/workflows/ci.yml/badge.svg)](https://github.com/hoshimoe/NekoNetwork/actions/workflows/ci.yml)
 
 ## Features
 
@@ -71,7 +71,7 @@ include(FetchContent)
 # Add Neko Network to your CMake project
 FetchContent_Declare(
     NekoNetwork
-    GIT_REPOSITORY https://github.com/moehoshio/NekoNetwork.git
+    GIT_REPOSITORY https://github.com/hoshimoe/NekoNetwork.git
     GIT_TAG        main
 )
 # Set Variables Before Building
@@ -217,7 +217,7 @@ using namespace neko::network;
 Network network;
 
 RequestConfig config;
-config.url = "https://api.github.com/users/moehoshio";
+config.url = "https://api.github.com/users/hoshimoe";
 config.method = RequestType::Get;
 
 auto result = network.execute(config);
@@ -1061,13 +1061,13 @@ For more detailed information, please refer to:
 
 ## See More
 
-- [NekoLog](https://github.com/moehoshio/NekoLog): An easy-to-use, modern, lightweight, and efficient C++20 logging library.
-- [NekoEvent](https://github.com/moehoshio/NekoEvent): A modern easy to use type-safe and high-performance event handling system for C++.
-- [NekoSchema](https://github.com/moehoshio/NekoSchema): A lightweight, header-only C++20 schema library.
-- [NekoSystem](https://github.com/moehoshio/NekoSystem): A modern C++20 cross-platform system utility library.
-- [NekoNetwork](https://github.com/moehoshio/NekoNetwork): A modern , easy-to-use C++20 networking library via libcurl.
-- [NekoFunction](https://github.com/moehoshio/NekoFunction): A comprehensive modern C++ utility library that provides practical functions for common programming tasks.
-- [NekoThreadPool](https://github.com/moehoshio/NekoThreadPool): An easy to use and efficient C++ 20 thread pool that supports priorities and submission to specific threads.
+- [NekoLog](https://github.com/hoshimoe/NekoLog): An easy-to-use, modern, lightweight, and efficient C++20 logging library.
+- [NekoEvent](https://github.com/hoshimoe/NekoEvent): A modern easy to use type-safe and high-performance event handling system for C++.
+- [NekoSchema](https://github.com/hoshimoe/NekoSchema): A lightweight, header-only C++20 schema library.
+- [NekoSystem](https://github.com/hoshimoe/NekoSystem): A modern C++20 cross-platform system utility library.
+- [NekoNetwork](https://github.com/hoshimoe/NekoNetwork): A modern , easy-to-use C++20 networking library via libcurl.
+- [NekoFunction](https://github.com/hoshimoe/NekoFunction): A comprehensive modern C++ utility library that provides practical functions for common programming tasks.
+- [NekoThreadPool](https://github.com/hoshimoe/NekoThreadPool): An easy to use and efficient C++ 20 thread pool that supports priorities and submission to specific threads.
 
 ## Contributing
 
@@ -1075,4 +1075,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-If you encounter any issues or have questions, please file an issue on the [GitHub issue tracker](https://github.com/moehoshio/NekoNetwork/issues).
+If you encounter any issues or have questions, please file an issue on the [GitHub issue tracker](https://github.com/hoshimoe/NekoNetwork/issues).

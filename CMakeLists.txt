@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(NekoNetwork VERSION 1.0.3 LANGUAGES CXX)
+project(NekoNetwork VERSION 1.0.4 LANGUAGES CXX)
 
 # ================
 # ==== Config ====
@@ -140,7 +140,7 @@ if(NEKO_NETWORK_AUTO_FETCH_DEPS)
         message(STATUS "NekoSchema not found; Neko Network is Fetching NekoSchema...")
         FetchContent_Declare(
             NekoSchema
-            GIT_REPOSITORY https://github.com/moehoshio/NekoSchema.git
+            GIT_REPOSITORY https://github.com/hoshimoe/NekoSchema.git
             GIT_TAG        main
         )
         set(NEKO_SCHEMA_BUILD_TESTS OFF CACHE BOOL "" FORCE)
@@ -151,7 +151,7 @@ if(NEKO_NETWORK_AUTO_FETCH_DEPS)
         message(STATUS "NekoFunction not found; Neko Network is Fetching NekoFunction...")
         FetchContent_Declare(
             NekoFunction
-            GIT_REPOSITORY https://github.com/moehoshio/NekoFunction.git
+            GIT_REPOSITORY https://github.com/hoshimoe/NekoFunction.git
             GIT_TAG        main
         )
         set(NEKO_FUNCTION_BUILD_TESTS OFF CACHE BOOL "" FORCE)
@@ -163,7 +163,7 @@ if(NEKO_NETWORK_AUTO_FETCH_DEPS)
         message(STATUS "NekoSystem not found; Neko Network is Fetching NekoSystem...")
         FetchContent_Declare(
             NekoSystem
-            GIT_REPOSITORY https://github.com/moehoshio/NekoSystem
+            GIT_REPOSITORY https://github.com/hoshimoe/NekoSystem
             GIT_TAG        main
         )
         set(NEKO_SYSTEM_BUILD_TESTS OFF CACHE BOOL "" FORCE)
@@ -175,7 +175,7 @@ if(NEKO_NETWORK_AUTO_FETCH_DEPS)
         message(STATUS "NekoLog not found; Neko Network is Fetching NekoLog...")
         FetchContent_Declare(
             NekoLog
-            GIT_REPOSITORY https://github.com/moehoshio/NekoLog.git
+            GIT_REPOSITORY https://github.com/hoshimoe/NekoLog.git
             GIT_TAG        main
         )
         set(NEKO_LOG_BUILD_TESTS OFF CACHE BOOL "" FORCE)

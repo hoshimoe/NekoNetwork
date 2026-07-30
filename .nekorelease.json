@@ -1,6 +1,6 @@
 {
   "packageName": "neko-network",
-  "repositoryUrl": "https://github.com/moehoshio/NekoNetwork",
+  "repositoryUrl": "https://github.com/hoshimoe/NekoNetwork",
   "packageManagers": [
     "vcpkg",
     "Conan"
