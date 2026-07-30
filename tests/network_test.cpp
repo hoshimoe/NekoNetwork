@@ -766,7 +766,7 @@ TEST(GlobalConfigTest, InitializeSetsDefaultConfiguration) {
     
     // Verify default values are set
     EXPECT_FALSE(cfg.getUserAgent().empty());
-    EXPECT_EQ(cfg.getUserAgent(), "NekoNet/v1.0 +https://github.com/moehoshio/NekoNet");
+    EXPECT_EQ(cfg.getUserAgent(), "NekoNetwork/v1.0.3 +https://github.com/moehoshio/NekoNetwork");
     EXPECT_EQ(cfg.getProtocol(), "https://");
     EXPECT_EQ(cfg.getProxy(), "true");
 }
