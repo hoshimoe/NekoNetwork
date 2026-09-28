@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(NekoNetwork VERSION 1.0.4 LANGUAGES CXX)
+project(NekoNetwork VERSION 1.0.5 LANGUAGES CXX)
 
 # ================
 # ==== Config ====
@@ -8,6 +8,7 @@ project(NekoNetwork VERSION 1.0.4 LANGUAGES CXX)
 option(NEKO_NETWORK_AUTO_FETCH_DEPS "Neko Network Automatically fetch dependencies" ON)
 option(NEKO_NETWORK_BUILD_TESTS "Neko Network Build tests" ON)
 option(NEKO_NETWORK_STATIC_LINK "Neko Network Static Link library" OFF)
+option(NEKO_NETWORK_ENABLE_NLOG "Neko Network Enable Neko Logger" ON)
 
 set(NEKO_NETWORK_LIBRARY_PATH "" CACHE PATH "Path to look for dependencies (OpenSSL, libcurl, GTest)")
 
@@ -171,7 +172,7 @@ if(NEKO_NETWORK_AUTO_FETCH_DEPS)
     endif()
 
     # Optionally
-    if(NOT NekoLog_FOUND)
+    if(NOT NekoLog_FOUND AND NEKO_NETWORK_ENABLE_NLOG)
         message(STATUS "NekoLog not found; Neko Network is Fetching NekoLog...")
         FetchContent_Declare(
             NekoLog
@@ -210,11 +211,18 @@ target_include_directories(NekoNetwork PUBLIC
 # Dependencies
 target_link_libraries(NekoNetwork PUBLIC
     # Neko
-    NekoSchema NekoLog NekoFunction NekoSystem
+    NekoSchema NekoFunction NekoSystem
     # libcurl
     CURL::libcurl
 )
 target_compile_features(NekoNetwork PUBLIC cxx_std_20)
+
+# Option Features
+if(NEKO_NETWORK_ENABLE_NLOG)
+	target_link_libraries(NekoNetwork PUBLIC
+		NekoLog
+	)
+endif()
 
 if(WIN32)
     target_link_libraries(NekoNetwork PUBLIC ws2_32) # Windows Sockets
